@@ -48,3 +48,9 @@ console.log(whatDoYouDo('retired', 'Mark Doe'));
     console.log(fullName)
 })('Doe')
 
+//Reto 02
+function getLargerInt(number1, number2) {
+    return `El número mayor es: ${(number1 > number2) ? number1 : number2}`;
+}
+
+console.log(getLargerInt(2, 9))
