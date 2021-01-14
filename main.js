@@ -53,4 +53,16 @@ function getLargerInt(number1, number2) {
     return `El número mayor es: ${(number1 > number2) ? number1 : number2}`;
 }
 
-console.log(getLargerInt(2, 9))
+console.log(getLargerInt(2, 9));
+
+//Reto 03
+function fibonacciSequence(number) {
+    if (number === 1) return '1';
+    let numbers = [1,1];
+    for (let i = 2; i < number; i++) {
+        numbers.push(numbers[i - 2] + numbers[i - 1]);
+    }
+    return numbers.join(', ');
+}
+
+console.log(fibonacciSequence(5));
