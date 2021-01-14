@@ -37,6 +37,14 @@ const whatDoYouDo = function (job, name) {
     }
 }
 
-console.log(whatDoYouDo('developer','John Doe'));
-console.log(whatDoYouDo('designer','Jane Doe'));
-console.log(whatDoYouDo('retired','Mark Doe'));
+console.log(whatDoYouDo('developer', 'John Doe'));
+console.log(whatDoYouDo('designer', 'Jane Doe'));
+console.log(whatDoYouDo('retired', 'Mark Doe'));
+
+
+//Ejemplo 03
+(function logName(lastName) {
+    let fullName = `John ${lastName}`;
+    console.log(fullName)
+})('Doe')
+
